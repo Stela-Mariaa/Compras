@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Compras Inteligente</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sistema de Compras Inteligente</h1>
+
+        <div id="budget-section">
+            <h2>Orçamento</h2>
+            <input type="number" id="budget" placeholder="Defina seu orçamento">
+            <button id="set-budget">Definir Orçamento</button>
+        </div>
+
+        <div id="product-section">
+            <h2>Adicionar Produto</h2>
+            <input type="text" id="product-name" placeholder="Nome do produto">
+            <input type="number" id="product-price" placeholder="Preço do produto">
+            <button id="add-product">Adicionar ao Carrinho</button>
+        </div>
+
+        <div id="cart-section">
+            <h2>Carrinho de Compras</h2>
+            <ul id="cart-list"></ul>
+            <h3>Total: R$ <span id="total-price">0.00</span></h3>
+            <button id="checkout">Finalizar Compra</button>
+        </div>
+
+        <div id="message-section" style="display:none;">
+            <h2>Compra Finalizada com Sucesso!</h2>
+            <button id="new-purchase">Nova Compra</button>
+        </div>
+
+        <div id="recommendation-section">
+            <h2>Produtos Recomendados</h2>
+            <ul id="recommended-products"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
